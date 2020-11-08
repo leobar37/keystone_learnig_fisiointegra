@@ -1,0 +1,28 @@
+.menu_fixed{
+    position: fixed;
+     bottom: 1.2rem;
+     right: 2.2rem;
+     z-index: 100;
+     .up_menu{
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-end;
+         color: black;
+         text-align: right;
+         i{
+             margin-right: 2rem;
+              font-size: 55px;
+         }
+     }
+     &_cite{
+         padding: 0.3rem 1rem;
+         background-color: white;
+         border-radius: 15px;
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+     }
+}

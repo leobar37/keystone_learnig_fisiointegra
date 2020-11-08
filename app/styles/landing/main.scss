@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+@import 'variables';
+@import 'responsive';
+@import 'generals';
+@import "mixins/mixinhelpers.scss";
+@import "footer";
+@import 'header';
+// **************** components ***************
+
+@import 'components/main.scss';
+// **************** end components ***************
+// **************** main ***************
+@import 'sections/main.scss';
+// **************** end main ***************
