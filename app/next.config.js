@@ -7,6 +7,4 @@ module.exports = {
      }
 }
 
-module.exports =  WithSass({
-    
-})
+module.exports =  WithSass({})
