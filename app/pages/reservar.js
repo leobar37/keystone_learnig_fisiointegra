@@ -5,13 +5,10 @@ import MenuFixed from '../components/menufixed';
 import { useFormik} from 'formik';
 import { Modal} from 'react-bootstrap';
 import axiosM from 'axios';
-
 const axios  = axiosM.create({baseURL  : "/admin/api" ,  headers : { 
      'Content-Type': 'application/json',
      'Accept': 'application/json',
 }});
-
-
 const createReserve = `mutation createReserve($name:String, $lastName:String ,
      $email :String, $description: String, $hourcall: DateTime ){
       
@@ -21,17 +18,6 @@ const createReserve = `mutation createReserve($name:String, $lastName:String ,
      description
    }
    }`;
-
-// const Modal = ()=>{
-      
-//      return  <>
-//           <Modal>
-//               <Modal.Header closeButton >
-                   
-//              </Modal.Header>               
-//           </Modal>
-//         </>
-// }
 
 const FormReserver = ()=>{
    const [show , setShow ] = useState(false);

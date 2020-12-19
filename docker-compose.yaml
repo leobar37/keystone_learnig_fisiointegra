@@ -1,0 +1,26 @@
+version: "3"
+services:
+  myapp:
+    image: app
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+  bd:
+    image: postgres:13-alpine
+    volumes:
+      - bdpostgres:/var/lib/postgresql/data
+    ports:
+      - "310:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: alfk3458
+      POSTGRES_USER: leobar37
+      POSTGRES_DB: keystone
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+volumes:
+  bdpostgres:
